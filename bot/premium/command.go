@@ -88,7 +88,7 @@ func BuildPatreonSubscriptionFoundMessage(ctx registry.CommandContext, legacyEnt
 				Label: ctx.GetMessage(i18n.MessagePremiumOpenServerSelector),
 				Style: component.ButtonStyleLink,
 				Emoji: utils.BuildEmoji("🔗"),
-				Url:   utils.Ptr("https://dashboard.ticketsbot.net/premium/select-servers"),
+				Url:   utils.Ptr("https://spectrabot.ca/"),
 			}),
 			component.BuildButton(component.Button{
 				Label:    ctx.GetMessage(i18n.MessagePremiumCheckAgain),
@@ -111,12 +111,12 @@ func BuildPatreonNotLinkedMessage(ctx registry.CommandContext) command.MessageRe
 			Style:    component.ButtonStylePrimary,
 			Emoji:    utils.BuildEmoji("🔎"),
 		}),
-		component.BuildButton(component.Button{
-			Label: ctx.GetMessage(i18n.MessagePremiumLinkPatreonAccount),
-			Style: component.ButtonStyleLink,
-			Emoji: ctx.SelectValidEmoji(customisation.EmojiPatreon, "🔗"),
-			Url:   utils.Ptr("https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role"), // TODO: Localised link
-		}),
+//		component.BuildButton(component.Button{
+//			Label: ctx.GetMessage(i18n.MessagePremiumLinkPatreonAccount),
+//			Style: component.ButtonStyleLink,
+//			Emoji: ctx.SelectValidEmoji(customisation.EmojiPatreon, "🔗"),
+//			Url:   utils.Ptr("https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role"), // TODO: Localised link
+//		}),
 		component.BuildButton(component.Button{
 			Label: ctx.GetMessage(i18n.MessageJoinSupportServer),
 			Style: component.ButtonStyleLink,

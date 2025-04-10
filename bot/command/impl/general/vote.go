@@ -86,7 +86,7 @@ func buildVoteComponents(ctx registry.CommandContext, allowRedeem bool) []compon
 		Label: ctx.GetMessage(i18n.TitleVote),
 		Style: component.ButtonStyleLink,
 		Emoji: utils.BuildEmoji("🔗"),
-		Url:   utils.Ptr("https://vote.ticketsbot.net"),
+		Url:   utils.Ptr(""),
 	})
 
 	redeemButton := component.BuildButton(component.Button{
